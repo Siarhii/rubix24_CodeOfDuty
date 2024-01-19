@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Details</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="restaurant9.css">
+  <style>
+    /* Additional styles for buttons and star rating */
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      max-width: 100%;
+      background: #111;
+      padding: 20px;
+      border: 1px solid #444;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      box-sizing: border-box;
+    }
+
+    .container .star-widget label {
+      font-size: 30px; /* Adjusted font size to fit within the box */
+      padding: 8px; /* Adjusted padding for better spacing */
+    }
+
+    .container .btn-container {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+      max-width: 100%;
+      justify-content: center;
+    }
+
+    .btn {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="restaurant-container">
+    <div class="restaurant-image">
+      <img src="Shiro" alt="Restaurant Image">
+    </div>
+    <div class="restaurant-details">
+      <h2>Shiro Restaurant</h2>
+      <p><strong>Location:</strong> Bangalore, India</p>
+      <p><strong>Cuisine:</strong>Japanese, Balinese & Chinese</p>
+      <p><strong>Rating:</strong> 4.6</p>
+      <p><strong>Safety Rating:</strong> 9.7</p>
+      <button class="btn">Reviews</button>
+      <button class="btn">Menu</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="post">
+      <div class="text">Thanks for rating us!</div>
+      <div class="edit">EDIT</div>
+    </div>
+    <div class="star-widget">
+      <input type="radio" name="rate" id="rate-5">
+      <label for="rate-5" class="fas fa-star"></label>
+      <input type="radio" name="rate" id="rate-4">
+      <label for="rate-4" class="fas fa-star"></label>
+      <input type="radio" name="rate" id="rate-3">
+      <label for="rate-3" class="fas fa-star"></label>
+      <input type="radio" name="rate" id="rate-2">
+      <label for="rate-2" class="fas fa-star"></label>
+      <input type="radio" name="rate" id="rate-1">
+      <label for="rate-1" class="fas fa-star"></label>
+      <form id="reviewForm">
+        <header></header>
+        <div class="textarea">
+          <textarea id="reviewText" cols="30" placeholder="Describe your experience.."></textarea>
+        </div>
+        <div class="btn">
+          <button type="button" onclick="postReview()">Post</button>
+        </div>
+      </form>
+    </div>
+    <div class="btn-container">
+      
+    </div>
+  </div>
+
+  <script>
+    function postReview() {
+      const reviewText = document.getElementById('reviewText').value;
+      if (reviewText.trim() !== '') {
+        // You can handle the review submission logic here
+        console.log('Review submitted:', reviewText);
+        document.getElementById('reviewForm').style.display = 'none';
+        document.querySelector('.text').innerText = 'Review submitted!';
+        document.querySelector('.post').style.display = 'block';
+      } else {
+        alert('Please enter a review before submitting.');
+      }
+    }
+
+    const btn = document.querySelector("button");
+    const post = document.querySelector(".post");
+    const widget = document.querySelector(".star-widget");
+    const editBtn = document.querySelector(".edit");
+    btn.onclick = () => {
+      widget.style.display = "none";
+      post.style.display = "block";
+      editBtn.onclick = () => {
+        widget.style.display = "block";
+        post.style.display = "none";
+      }
+      return false;
+    }
+  </script>
+
+</body>
+</html>

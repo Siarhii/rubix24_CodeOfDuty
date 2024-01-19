@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../travel project/rubix24_CodeOfDuty"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "rubix24_CodeOfDuty"
+	}
+}
