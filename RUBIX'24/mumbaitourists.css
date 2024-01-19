@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+.museum-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.museum-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+#attraction-details {
+  text-align: left;
+  margin-top: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+p {
+  margin: 10px 0;
+  color: #666;
+}
+
+#reviews,
+#safety-ratings {
+  margin-top: 20px;
+}
+
+.review {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.rating {
+  color: #007bff;
+}
+
+/* Add more styles as needed */
+

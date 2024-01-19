@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delhi Transportation Hub</title>
+  <link rel="stylesheet" href="delhi.css">
+</head>
+<body>
+
+    <header>
+        <h1>Delhi Transportation Hub</h1>
+    </header>
+    
+    <section id="Transportation-services">
+        <h2>Transportation Services</h2>
+        <div class="service" id="Train-Services">
+            <h3>Metro-Services</h3>
+            <p>Schedule, Routes, Fares</p>
+        </div>
+    </section>
+  <div class="container">
+    <button class="service-btn" onclick="showTrainDetails()">View Train Services</button>
+    </div>
+    <section id="Transportation-services">
+        <h2>Transportation Services</h2>
+     <div class="service" id="Bus-services">
+     <h3>Bus-services</h3>
+     <p>Schedule, Routes, Fares</p>
+     </div>
+    </section>
+<div class="container">      
+<button class="service-btn" onclick="showBusDetails()">View Bus Services</button>
+  </div>
+  <section id="details-container" class="hidden">
+    <h2 id="service-title"></h2>
+    <table id="service-table">
+      <thead>
+        <tr>
+          <th>Route</th>
+          <th>Schedule</th>
+          <th>Fare</th>
+        </tr>
+      </thead>
+      <tbody id="service-details">
+        <!-- Details will be dynamically populated here -->
+      </tbody>
+    </table>
+    <button class="close-btn" onclick="hideDetails()">Close</button>
+  </section>
+
+  <script src="scriptdelhi.js"></script>
+
+</body>
+</html>
