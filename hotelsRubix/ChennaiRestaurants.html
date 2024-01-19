@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurant Details</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="restaurant9.css">
+  <link rel="stylesheet" href="ChennaiRestaurants.css">
+  <link rel="stylesheet" href="arrey1.css">
+  <link rel="stylesheet" href="arrey2.css">
+
   <style>
     /* Additional styles for buttons and star rating */
     .container {
@@ -59,50 +62,35 @@
 
   <div class="restaurant-container">
     <div class="restaurant-image">
-      <img src="yevacha bangalore" alt="Restaurant Image">
+      <img src="on DE ROOF.jpg" alt="Restaurant Image">
     </div>
     <div class="restaurant-details">
-      <h2>Yauatcha Bangalore</h2>
-      <p><strong>Location:</strong> Bangalore, India</p>
-      <p><strong>Cuisine:</strong>Asian Cuisine</p>
+      <h2>On DE Roof Restaurant (Chennai)</h2>
+      <p><strong>Location:</strong> Chennai, Tamil Nadu</p>
+      <p><strong>Cuisine:</strong>Chinese</p>
       <p><strong>Rating:</strong> 4.8</p>
-      <p><strong>Safety Rating:</strong> 9.6</p>
+      <p><strong>Safety Rating:</strong> 9.5</p>
       <button class="btn">Reviews</button>
       <button class="btn">Menu</button>
     </div>
   </div>
 
-  <div class="container">
-    <div class="post">
-      <div class="text">Thanks for rating us!</div>
-      <div class="edit">EDIT</div>
+  <div class="restaurant-container">
+    <div class="restaurant-image">
+      <img src="Trineda Chennai.jpg" alt="Restaurant Image">
     </div>
-    <div class="star-widget">
-      <input type="radio" name="rate" id="rate-5">
-      <label for="rate-5" class="fas fa-star"></label>
-      <input type="radio" name="rate" id="rate-4">
-      <label for="rate-4" class="fas fa-star"></label>
-      <input type="radio" name="rate" id="rate-3">
-      <label for="rate-3" class="fas fa-star"></label>
-      <input type="radio" name="rate" id="rate-2">
-      <label for="rate-2" class="fas fa-star"></label>
-      <input type="radio" name="rate" id="rate-1">
-      <label for="rate-1" class="fas fa-star"></label>
-      <form id="reviewForm">
-        <header></header>
-        <div class="textarea">
-          <textarea id="reviewText" cols="30" placeholder="Describe your experience.."></textarea>
-        </div>
-        <div class="btn">
-          <button type="button" onclick="postReview()">Post</button>
-        </div>
-      </form>
-    </div>
-    <div class="btn-container">
-      
+    <div class="restaurant-details">
+      <h2>Trineda Chennai</h2>
+      <p><strong>Location:</strong> Chennai, Tamil Nadu</p>
+      <p><strong>Cuisine:</strong>Chinese</p>
+      <p><strong>Rating:</strong> 4.6</p>
+      <p><strong>Safety Rating:</strong> 9.7</p>
+      <button class="btn">Reviews</button>
+      <button class="btn">Menu</button>
     </div>
   </div>
 
+  
   <script>
     function postReview() {
       const reviewText = document.getElementById('reviewText').value;

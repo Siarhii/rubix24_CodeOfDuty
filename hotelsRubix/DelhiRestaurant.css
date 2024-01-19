@@ -1,18 +1,21 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
-  
-  /* Restaurant details styles */
-  .restaurant-container {
-    display: flex;
-    max-width: 800px;
-    margin: 50px auto;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  background-image: url(restaurantimage.jpg);
+  background-position: cover cover;
+
+}
+
+/* Restaurant details styles */
+.restaurant-container {
+  display: flex;
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: pink;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
   
   .restaurant-image {
     flex: 1;
