@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Section</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      column-gap: 40px;
+    }
+
+    .review-container1 {
+      /* width: 500px;  */
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .review-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      margin-top: 10px
+    }
+
+    .username-input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+    }
+
+    .comment-input {
+      width: 100%;
+      height: 150px; /* Adjust the height as needed */
+      padding: 8px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      resize: none;
+    }
+
+    .emoji-container {
+      display: flex;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .emoji {
+      cursor: pointer;
+      margin-right: 5px;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease-in-out;
+    }
+
+    .emoji.selected {
+      filter: none;
+    }
+
+    .post-button {
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .review-posted-message {
+      display: none;
+      color: #4caf50;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    .review-container {
+      display: flex;
+      flex-direction: column; /* Updated to column direction */
+      align-items: center;
+      /* width: 100%; */
+    }
+
+    .review {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin: 15px;
+      padding: 20px;
+      width: 300px;
+      transition: transform 0.2s;
+    }
+
+    .review:hover {
+      transform: scale(1.02);
+    }
+
+    .user {
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 8px;
+    }
+
+    .rating {
+      color: #FFD700; /* Golden yellow color for stars */
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .comment {
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .posted-at {
+      color: #888;
+      font-size: 0.9em;
+    }
+    
+
+  </style>
+</head>
+<body>
+  <div class="review-container">
+    <div class="review-title">Post a review...</div>
+  
+    <input type="text" class="username-input" placeholder="Write username...">
+  
+    <textarea class="comment-input" placeholder="Write your review..."></textarea>
+  
+    <div class="emoji-container">
+      <div class="emoji" id="star1" >😢</div>
+      <div class="emoji" id="star2">😕</div>
+      <div class="emoji" id="star3">😐</div>
+      <div class="emoji" id="star4">😊</div>
+      <div class="emoji" id="star5">😍</div>
+    </div>
+  
+    <button class="post-button" id="postButton">Post Review</button>
+  
+    <div class="review-posted-message" id="reviewPostedMessage">Review Posted!</div>
+  </div>
+
+  <div class="review-container1" id="reviewContainer"></div>
+
+<script src="review.js" type="module"></script> 
+</body>
+</html>
