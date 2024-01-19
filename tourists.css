@@ -1,0 +1,135 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* Choose one of the following background color options */
+  background-color: blue  /* Light background color */
+  /* background-color: #333; */ /* Dark background color */
+  /* background: linear-gradient(to right, #1e5799, #2989d8, #7db9e8); */ /* Gradient background */
+  /* background-color: #e0e0e0; */ /* Neutral background */
+}
+
+/* Header styles */
+header {
+  background: linear-gradient(to right, #4CAF50, #FFC107); /* Gradient background */
+  color: white;
+  padding: 15px;
+  background-color: #FFC107;
+}
+
+/* Main content styles */
+.container {
+  margin-top: 20px;
+}
+
+/* Section heading styles */
+h3 {
+  background-color: #0A6AE4; /* Blue box color */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Card styles */
+.card {
+  border: 1px solid #dee2e6;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card title styles */
+.card-title {
+  font-size: 1.5rem;
+  color: #0A6AE4; /* Blue color for titles */
+  margin-bottom: 10px;
+}
+
+/* Card description styles */
+.card-description {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Card image styles */
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+
+/* Package ratings styles */
+.package-ratings {
+  color: orange;
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: #0A6AE4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+  background-color: #343a40; /* Dark background color */
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Chat button styles */
+.open-button {
+  background-color: #0A6AE4;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5%;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  font-weight: bold;
+}
+
+/* Chat popup styles */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Form container styles */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Textarea styles */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* Button hover effect */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}

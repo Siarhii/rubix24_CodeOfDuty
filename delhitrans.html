@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delhi Transportation Hub</title>
+  <link rel="stylesheet" href="delhitrans.css">
+  <link rel="stylesheet" href="abey1.css">
+  <link rel="stylesheet" href="abey2.css">
+</head>
+<body>
+    <header class="header">
+        <div class="andrew">
+        <nav>
+            <div class="nav__logo"><a style="text-decoration: none;" href="index.html">Wanderlust</a></div>
+            <ul class="nav__links">
+              <li class="link"><a style="text-decoration: none;" href="index.html">Home</a></li>
+              <li class="link dropdown">
+                <a href="#" class="dropbtn">Feature</a>
+                <div class="dropdown-content">
+                  <a href="#">Feature 1</a>
+                  <a href="#">Feature 2</a>
+                </div>
+              </li>
+              <li class="link dropdown">
+                <a href="#" class="dropbtn">Trending</a>
+                <div class="dropdown-content">
+                  <a href="#">Trend 1</a>
+                  <a href="#">Trend 2</a>
+                </div>
+              </li>
+              <li class="link dropdown">
+                <a href="#" class="dropbtn">Destinations</a>
+                <div class="dropdown-content">
+                  <div class="sub-dropdown">
+                    <a href="">Mumbai</a>
+                    <div class="sub-dropdown-content">
+                      <!-- Add links for Destination 1's sub-dropdown content -->
+                      <a href="mumbaih.html">Accomodation</a>
+                      <a href="MumbaiRestaurants.html">Restraunts</a>
+                      <a href="#">Transportation</a>
+                      <a href="touristplaces.html">Tourist Spot</a>
+                      <!-- Add more sub-destination links as needed -->
+                    </div>
+                  </div>
+                  <div class="sub-dropdown">
+                    <a href="#">Delhi</a>
+                    <div class="sub-dropdown-content">
+                      <!-- Add links for Destination 2's sub-dropdown content -->
+                      <a href="delhih.html">Accomodation</a>
+                      <a href="DelhiRestaurants.html">Restraunts</a>
+                      <a href="#">Transportation</a>
+                      <a href="Delhitourists.html">Tourist Spot</a>
+                      <!-- Add more sub-destination links as needed -->
+                    </div>
+                  </div>
+                  <div class="sub-dropdown">
+                    <a href="#">Chennai</a>
+                    <div class="sub-dropdown-content">
+                      <!-- Add links for Destination 2's sub-dropdown content -->
+                      <a href="cheenaih.html">Accomodation</a>
+                      <a href="ChennaiRestaurants.html">Restraunts</a>
+                      <a href="#">Transportation</a>
+                      <a href="">Tourist Spot</a>
+                      <!-- Add more sub-destination links as needed -->
+                    </div>
+                  </div>
+                  <div class="sub-dropdown">
+                    <a href="#">Banglore</a>
+                    <div class="sub-dropdown-content">
+                      <!-- Add links for Destination 2's sub-dropdown content -->
+                      <a href="bangaloreh.html">Accomodation</a>
+                      <a href="BangaloreRestaurants.html">Restraunts</a>
+                      <a href="#">Transportation</a>
+                      <a href="">Tourist Spot</a>
+                      <!-- Add more sub-destination links as needed -->
+                    </div>
+                  </div>
+                  <div class="sub-dropdown">
+                    <a href="#">Kolkata</a>
+                    <div class="sub-dropdown-content">
+                      <!-- Add links for Destination 2's sub-dropdown content -->
+                      <a href="#">Accomodation</a>
+                      <a href="kolkataRestaurants.html">Restraunts</a>
+                      <a href="#">Transportation</a>
+                      <a href="RUBIX'24/Kolkata.html">Tourist Spot</a>
+                      <!-- Add more sub-destination links as needed -->
+                    </div>
+                  </div>
+                  <div class="sub-dropdown">
+                    <a href="#">Hyderabad</a>
+                    <div class="sub-dropdown-content">
+                      <!-- Add links for Destination 2's sub-dropdown content -->
+                      <a href="#">Accomodation</a>
+                      <a href="HydrabadRestaurants.html">Restraunts</a>
+                      <a href="#">Transportation</a>
+                      <a href="#">Tourist Spot</a>
+                      <!-- Add more sub-destination links as needed -->
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="link"><a style="text-decoration: none;" href="#client">Contact Us</a></li>
+              <li class="link"><a style="text-decoration: none;" href="helpline.html">Helpline</a></li>
+            </ul>
+          </nav></div></header>
+    <header>
+        <h1>Delhi Transportation Hub</h1>
+    </header>
+    
+    <section id="metro-services">
+        <h2>Metro Services</h2>
+        <div class="service" id="Train-Services">
+            <h3>Metro-Services</h3>
+            <p>Schedule, Routes, Fares</p>
+            <p>For more detailed Schedule visit: <a href="delhi.html" target="_blank">Visit Website</a></p>
+        </div>
+        <div class="container">
+            <button class="service-btn" onclick="showTrainDetails()">View Metro Services</button>
+        </div>
+    </section>
+
+    <section id="bus-services">
+        <h2>Bus Services</h2>
+        <div class="service" id="Bus-services">
+            <h3>Bus-services</h3>
+            <p>Schedule, Routes, Fares</p>
+            <p>For more detailed Schedule visit: <a href="https://www.dtcbusroutes.in/bus/search/" target="_blank">Visit Website</a></p>
+
+            
+        </div>
+        <div class="container">      
+            <button class="service-btn" onclick="showBusDetails()">View Bus Services</button>
+        </div>
+    </section>
+
+    <section id="details-container" class="hidden">
+        <h2 id="service-title"></h2>
+        <table id="service-table">
+            <thead>
+                <tr>
+                    <th>Route</th>
+                    <th>Schedule</th>
+                    <th>Fare</th>
+                </tr>
+            </thead>
+            <tbody id="service-details">
+                <!-- Details will be dynamically populated here -->
+            </tbody>
+        </table>
+        <button class="close-btn" onclick="hideDetails()">Close</button>
+    </section>
+
+    <script src="delhitrans.js"></script>
+
+</body>
+</html>
+

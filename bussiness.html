@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Registration</title>
+    <link rel="stylesheet" href="bussiness.css">
+    
+</head>
+<body>
+
+    <h1>Business Registration</h1>
+
+    <form id="registrationForm">
+        <!-- Business Information -->
+        <label for="businessName">Business Name:</label>
+        <input type="text" id="businessName" name="businessName" required>
+
+        <label for="businessType">Business Type or Industry:</label>
+        <input type="text" id="businessType" name="businessType" required>
+
+        <label for="businessStructure">Business Structure:</label>
+        <select id="businessStructure" name="businessStructure" required>
+            <option value="soleProprietorship">Sole Proprietorship</option>
+            <option value="llc">LLC</option>
+            <option value="corporation">Corporation</option>
+        </select>
+
+        <!-- Contact Information -->
+        <label for="physicalAddress">Physical Address:</label>
+        <input type="text" id="physicalAddress" name="physicalAddress" required>
+
+        <label for="mailingAddress">Mailing Address:</label>
+        <input type="text" id="mailingAddress" name="mailingAddress">
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+        <label for="emailAddress">Email Address:</label>
+        <input type="email" id="emailAddress" name="emailAddress" required>
+
+        <!-- Ownership and Management -->
+        <label for="ownerName">Owner's Name(s):</label>
+        <input type="text" id="ownerName" name="ownerName" required>
+
+        <label for="ownerContact">Owner's Contact Information:</label>
+        <input type="text" id="ownerContact" name="ownerContact" required>
+
+        <label for="managementPersonnel">Management Personnel (if applicable):</label>
+        <input type="text" id="managementPersonnel" name="managementPersonnel">
+
+        <!-- Legal Information -->
+        <label for="taxID">Tax ID or EIN:</label>
+        <input type="text" id="taxID" name="taxID" required>
+
+        <label for="registrationNumber">Business Registration Number:</label>
+        <input type="text" id="registrationNumber" name="registrationNumber">
+
+        <label for="licensesPermits">Relevant Licenses or Permits:</label>
+        <input type="text" id="licensesPermits" name="licensesPermits">
+
+        <!-- Financial Information -->
+        <label for="bankAccount">Bank Account Information:</label>
+        <input type="text" id="bankAccount" name="bankAccount" required>
+
+        <label for="billingInformation">Billing Information (if applicable):</label>
+        <input type="text" id="billingInformation" name="billingInformation">
+
+        <!-- Website and Online Presence -->
+        <label for="websiteURL">Business Website URL:</label>
+        <input type="url" id="websiteURL" name="websiteURL">
+
+        <label for="socialMedia">Social Media Profiles (if applicable):</label>
+        <input type="text" id="socialMedia" name="socialMedia">
+
+        <!-- Product or Service Details -->
+        <label for="productDescription">Description of Products/Services:</label>
+        <textarea id="productDescription" name="productDescription" rows="4" required></textarea>
+
+        <label for="pricingInformation">Pricing Information (if applicable):</label>
+        <input type="text" id="pricingInformation" name="pricingInformation">
+
+        <!-- Terms and Conditions -->
+        <label for="termsConditions">
+            <input type="checkbox" id="termsConditions" name="termsConditions" required>
+            I agree to the terms and conditions of using the online registration service
+        </label>
+
+        <!-- Security Information -->
+        <label for="username">Create Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Create Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="button" onclick="submitForm()">Submit Registration</button>
+    </form>
+
+    <div id="success-message"></div>
+    <div id="error-message"></div>
+
+    <script>
+        function submitForm() {
+            // Implement form submission logic here
+            // You would typically use AJAX to send the form data to a server
+
+            // For the example, showing a success message
+            document.getElementById('success-message').innerText = 'Registration successful!';
+            document.getElementById('success-message').style.display = 'block';
+
+            // Clear the form after submission (you might want to redirect or do other things)
+            document.getElementById('registrationForm').reset();
+        }
+    </script>
+
+</body>
+</html>
