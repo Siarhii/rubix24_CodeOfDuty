@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Requests</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .request {
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .request.rejected {
+            background-color: #ffebee; /* Red background for rejected requests */
+        }
+
+        .request.verified {
+            background-color: #e8f5e9; /* Green background for verified requests */
+        }
+
+        .request:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .request div {
+            display: flex;
+            flex-direction: column; /* Display details in a column */
+        }
+
+        .request strong {
+            color: #333;
+        }
+
+        .btn-details {
+            padding: 8px;
+            cursor: pointer;
+            border: none;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+            max-width: 120px; /* Set a maximum width for the buttons */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: flex-end;
+            align-self: flex-end;
+            margin-top: auto;
+        }
+
+        .btn {
+            padding: 8px;
+            cursor: pointer;
+            border: none;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+            max-width: 60px; /* Set a maximum width for the buttons */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-left: 5px; /* Add margin between buttons */
+        }
+
+        .btn:hover {
+            background-color: #ddd;
+        }
+
+        .btn.verify {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .btn.reject {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .business-details {
+            margin-top: 10px;
+        }
+
+        .business-details p {
+            margin: 5px 0;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div id="businessRequests"></div>
+
+<script type="module" src="admin.js">
+   
+</script>
+</body>
+</html>

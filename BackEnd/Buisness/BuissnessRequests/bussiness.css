@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    /* background-color: #37cbf7; */
+    /* background: url(image/reading-business-document_1098-19650.jpg); */
+    opacity: 0.65;
+    color: #333;
+    /* position: absolute; */
+    background-repeat: no-repeat;
+    background-position: cover cover;
+    position: relative;
+    background-size: cover;
+    font-weight: bolder;
+    z-index: 11;
+    /* background-image: url(bussinesspic.jpeg); */
+    border: 5px solid #fff;
+    font-weight:bold
+    
+
+}
+
+h1 {
+    text-align: center;
+    color: #007BFF;
+    font-weight: bold;
+    border: 5px solid rgb(39, 93, 244);
+    background-color: #ccc;
+}
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    /* background-color: #fff; */
+    background: rgba(23, 23, 23, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #070000;
+    /* background-color: #333; */
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select {
+    appearance: none;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#success-message, #error-message {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+#success-message {
+    background-color: #28a745;
+    color: #fff;
+}
+
+#error-message {
+    background-color: #dc3545;
+    color: #fff;
+}
